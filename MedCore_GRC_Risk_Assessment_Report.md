@@ -2,18 +2,18 @@
 
 ## Cover Information
 
-| Field | Value |
-| --- | --- |
-| Organization | MedCore Clinics |
-| Document | GRC Risk Assessment Report |
-| Framework | NIST Cybersecurity Framework 2.0 |
-| Assessment phase | Design / Pre-Implementation |
-| Prepared by | [STUDENT NAME] |
-| Student ID | [STUDENT ID] |
-| Course | [COURSE NAME] |
-| Instructor | [INSTRUCTOR NAME] |
-| Submission date | August 31, 2026 |
-| Document version | 1.0 |
+| Field | Value                                     |
+| --- |-------------------------------------------|
+| Organization | MedCore Clinics                           |
+| Document | GRC Risk Assessment Report                |
+| Framework | NIST Cybersecurity Framework 2.0          |
+| Assessment phase | Design / Pre-Implementation               |
+| Prepared by | Hassan Ayman                              |
+| Student ID | 1000000                                   |
+| Course | Cyber                                     |
+| Instructor | Mohamed Sherif, Ahmed Hesham, Saleh Gomaa |
+| Submission date | August 31, 2026                           |
+| Document version | 1.0                                       |
 
 ## Document Control
 
