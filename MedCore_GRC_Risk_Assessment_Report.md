@@ -17,14 +17,14 @@
 
 ## Document Control
 
-| Item | Value |
-| --- | --- |
+| Item | Value                                      |
+| --- |--------------------------------------------|
 | Document title | MedCore Clinics GRC Risk Assessment Report |
-| Version | 1.0 |
-| Status | Final academic submission |
-| Author | [STUDENT NAME] |
-| Date | August 31, 2026 |
-| Classification | Academic / Confidential Scenario |
+| Version | 1.0                                        |
+| Status | Final academic submission                  |
+| Author | Hassan Ayman                               |
+| Date | August 31, 2026                            |
+| Classification | Academic / Confidential Scenario           |
 
 ## Table of Contents
 
