@@ -8,7 +8,7 @@
 - GRC Risk Assessment
 - NIST Cybersecurity Framework 2.0
 - Design / Pre-Implementation
-- Prepared by: [STUDENT NAME]
+- Prepared by: Hassan Ayman
 
 ### Suggested Visual
 
