@@ -176,42 +176,7 @@ Legacy records from the 14 local systems will be exported to CSV, uploaded over 
 
 ### 3.2 Data-Flow Diagram
 
-```mermaid
-flowchart TD
-    subgraph C["Fourteen MedCore Clinics"]
-        W["Clinic workstations<br>Chrome on Windows laptops"]
-        L["Fourteen legacy systems"]
-    end
-
-    I["Public internet"]
-    F["Shared CSV migration folder"]
-    M["ClinicCloud migration pipeline"]
-
-    subgraph V["ClinicCloud SaaS vendor boundary"]
-        WEB["ClinicCloud web application"]
-        APP["ClinicCloud application servers"]
-        DB["ClinicCloud primary database<br>PII, PHI, billing, appointments"]
-        BAK["Vendor backup storage<br>region/encryption TBD"]
-    end
-
-    BILL["Billing clearinghouse"]
-    REM["Reminder service"]
-    HD["IT helpdesk contractor"]
-    RAT["Remote-access tool<br>product TBD"]
-
-    W -- "HTTPS / staff credentials / PII/PHI" --> I
-    I -- "HTTPS" --> WEB
-    WEB -- "internal vendor network" --> APP
-    APP -- "patient records / PII / PHI" --> DB
-    APP -- "API HTTPS / billing data / diagnosis codes" --> BILL
-    APP -- "API HTTPS / appointment data" --> REM
-    L -- "CSV migration export / PII/PHI" --> F
-    F -- "bulk import" --> M
-    M -- "CSV migration into ClinicCloud" --> APP
-    APP -- "automated nightly backup" --> BAK
-    HD -- "remote support" --> RAT
-    RAT -- "troubleshooting access" --> W
-```
+![MedCore Clinics data-flow diagram](images/1.png)
 
 ### 3.3 Trust Boundaries
 
