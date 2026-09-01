@@ -678,13 +678,6 @@ This is a plausible design-phase attack scenario, not an actual incident. A clin
 - Low risks: 0
 - Total risks: 14
 
-```mermaid
-pie title MedCore Risk Distribution
-    "Critical" : 9
-    "High" : 4
-    "Medium" : 1
-    "Low" : 0
-```
 
 ## 9. Business Impact Analysis
 
