@@ -344,19 +344,7 @@ The threat model derives threat actors and attack paths from MedCore's design, d
 
 This is a plausible design-phase attack scenario, not an actual incident. A clinic laptop is stolen or compromised. Because clinic laptops are existing Windows devices with unknown and unmanaged patch status, the attacker may obtain a clinician password or active browser session. MFA is not enabled, so the stolen credential can be enough to access ClinicCloud over the public internet. Once inside, the attacker benefits from the current role design: clinic-level access restrictions do not exist, and a clinician at one clinic can see patients from other clinics. Because MedCore-side logging and monitoring are not designed, detection and response may be delayed, increasing patient-data exposure and regulatory impact.
 
-```mermaid
-flowchart TD
-    S1["1. Clinic laptop stolen or compromised"]
-    S2["2. Patch status unknown and unmanaged"]
-    S3["3. Password or browser session stolen"]
-    S4["4. MFA not enabled"]
-    S5["5. ClinicCloud accessed over public internet"]
-    S6["6. No clinic-level patient restrictions"]
-    S7["7. Multi-clinic patient records exposed"]
-    S8["8. Missing monitoring delays response"]
-
-    S1 --> S2 --> S3 --> S4 --> S5 --> S6 --> S7 --> S8
-```
+![MedCore Clinics multi-step attack chain](images/2.png)
 
 | Step | Attack-Chain Event | Exploited Gap | Related Asset | Related Risk |
 | ---: | --- | --- | --- | --- |
